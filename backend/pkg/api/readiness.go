@@ -3,7 +3,7 @@ package api
 import (
 	"net/http"
 
-	"github.com/zajicekn/Personal-Website/pkg/util"
+	"github.com/noazaj/Personal-Website/pkg/util"
 )
 
 func HandlerReadiness(w http.ResponseWriter, r *http.Request) {
