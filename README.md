@@ -4,7 +4,7 @@ This is my personal website, built to showcase my work and skills. It uses Go fo
 
 ## Dependencies
 
-List of dependcies utilized
+List of dependencies utilized
 ```
 go get github.com/joho/godotenv
 ```
