@@ -1,4 +1,4 @@
-module github.com/zajicekn/Personal-Website
+module github.com/noazaj/Personal-Website
 
 go 1.22.0
 
