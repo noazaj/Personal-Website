@@ -1,1 +1,3 @@
-backend/.env
+/backend/.env
+/backend/bin
+/scripts/run_server.sh
