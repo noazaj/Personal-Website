@@ -12,9 +12,9 @@ import (
 
 func main() {
 	// Load env variables
-	err := godotenv.Load("../../.env")
+	err := godotenv.Load("../.env")
 	if err != nil {
-		log.Fatal("Error: couldn't load .env variables")
+		log.Fatalf("Couldn't load .env variables. Error: %s", err)
 	}
 
 	// Get the port to be used for the server
