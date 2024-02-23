@@ -16,9 +16,7 @@ github.com/go-chi/chi/v5
 
 In order to start the server, it needs a port to run on. Create a ```.env``` file within the root directory of ```backend```. It will need to have the name of ```PORT```. An example is shown below:
 
-### .env file
-
-```PORT="8080"```
+ ⋅⋅.env file -> ```PORT="8080"```
 
 The port number will need to be enclosed in strings for it to be loaded into the program.
 
