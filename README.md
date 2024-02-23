@@ -12,7 +12,18 @@ go get github.com/joho/godotenv
 github.com/go-chi/chi/v5
 ```
 
+## Setup File(s)
+
+In order to start the server, it needs a port to run on. Create a ```.env``` file within the root directory of ```backend```. It will need to have the name of ```PORT```. An example is shown below:
+
+### .env file
+
+```PORT="8080"```
+
+The port number will need to be enclosed in strings for it to be loaded into the program.
+
 ## Scripts
+
 There is one script written to source the .env variables to the binary. Depending on how one might implement the script and its location, permissions may be denied. You will need to run this command in the terminal to allow permission.
 ```
 chmod +x ./path/to/your/script/example.sh
