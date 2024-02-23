@@ -2,7 +2,7 @@
 BIN := server
 
 # This is the directory where the binary will be created
-BIN_DIR := ./bin
+BIN_DIR := ./backend/bin
 
 # This is the directory of the main.go file
 SRC_DIR := ./backend/cmd/server
@@ -18,7 +18,7 @@ build:
 # Use this to run the build
 .PHONY: run
 run:
-	$(BIN_DIR)/$(BIN)
+	./backend/scripts/run_server.sh
 
 # Use this to clean the build
 .PHONY: clean
