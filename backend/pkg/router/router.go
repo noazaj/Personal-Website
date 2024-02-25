@@ -1,9 +1,9 @@
 package router
 
 import (
+	"log"
 	"net/http"
 	"os"
-	"path/filepath"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/noazaj/Personal-Website/pkg/api"
@@ -17,8 +17,10 @@ func NewRouter() *chi.Mux {
 	router.Use(middleware.MiddlewareCors)
 
 	// Serve static files
-	workDir, _ := os.Getwd()
-	publicDir := filepath.Join(workDir, "../../frontend/public")
+	publicDir := os.Getenv("PUBLIC_DIR")
+	if publicDir == "" {
+		log.Fatal("PUBLIC_DIR environment variable is not set")
+	}
 	router.Handle("/*", http.FileServer(http.Dir(publicDir)))
 
 	// Create the subrouter and mount it to the main router
