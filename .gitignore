@@ -1,3 +1,5 @@
 /backend/.env
 /backend/bin
 /scripts/run_server.sh
+/backend/.air.toml
+/backend/tmp
