@@ -8,6 +8,14 @@ body {
     background-color: black;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 20%;
+}
+
+.topnav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 
 .topnavbar a {
