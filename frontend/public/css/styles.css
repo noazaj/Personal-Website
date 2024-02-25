@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.topnavbar {
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.topnavbar a {
+    color: azure;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnavbar a:not(.logo-link):hover {
+    background-color: azure;
+    color: black;
+}
+
+.topnavbar a.active {
+    background-color: gray;
+    color: azure;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.logo-link img {
+    display: block;
+}
+
+.topnavbar a:not(:first-child) {
+    margin-left: 10px;
+}
