@@ -9,7 +9,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20%;
+    padding: 0 10%;
 }
 
 .topnav-right {
@@ -19,20 +19,20 @@ body {
 }
 
 .topnavbar a {
-    color: azure;
+    color: white;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
 
-.topnavbar a:not(.logo-link):hover {
-    background-color: azure;
+.topnavbar a:not(.logo-link):not(.socials-link):hover {
+    background-color: white;
     color: black;
 }
 
 .topnavbar a.active {
     background-color: gray;
-    color: azure;
+    color: white;
 }
 
 .logo-link {
