@@ -9,10 +9,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10%;
+    padding: 0 20%;
 }
 
-.topnav-right {
+.topnavbar-pages {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-left: 30%;
+}
+
+.topnavbar-socials {
     display: flex;
     align-items: center;
     margin-left: auto;
