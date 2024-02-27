@@ -55,3 +55,20 @@ body {
 .topnavbar a:not(:first-child) {
     margin-left: 10px;
 }
+
+/* Everything below here is used for mobile devices */
+@media screen and (max-width: 600px) {
+    .topnavbar {
+        padding: 0 10px; /* Reduce padding on smaller screens */
+    }
+
+    .topnavbar-pages,
+    .topnavbar-socials {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .topnavbar a {
+        padding: 10px 8px; /* Adjust link padding */
+    }
+}
