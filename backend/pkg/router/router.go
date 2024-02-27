@@ -21,7 +21,7 @@ func NewRouter() *chi.Mux {
 	if publicDir == "" {
 		log.Fatal("PUBLIC_DIR environment variable is not set")
 	}
-	router.Handle("/*", http.FileServer(http.Dir(publicDir)))
+	router.Handle("/v1/*", http.FileServer(http.Dir(publicDir)))
 
 	// Create the subrouter and mount it to the main router
 	v1 := chi.NewRouter()
