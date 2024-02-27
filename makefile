@@ -2,11 +2,11 @@
 BIN := server
 
 # This is the directory where the binary will be created
-BIN_DIR := .
+BIN_DIR := ./backend/bin
 
 # This is the directory of the main.go file
 SRC_DIR := ./backend/cmd/server
-    
+
 # This will create the bin directory if it doesn't exist
 $(shell mkdir -p $(BIN_DIR))
 
