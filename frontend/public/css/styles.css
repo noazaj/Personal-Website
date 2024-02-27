@@ -10,7 +10,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     padding: 0 5vw;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .topnavbar-pages {
