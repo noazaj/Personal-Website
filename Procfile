@@ -1,0 +1,1 @@
+web: sh heroku_build.sh && ./backend/bin/server
