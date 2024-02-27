@@ -1,1 +1,1 @@
-web: backend/bin/app
+web: backend/bin/server
