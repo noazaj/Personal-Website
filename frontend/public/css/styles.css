@@ -59,7 +59,7 @@ body {
 /* Everything below here is used for mobile devices */
 @media screen and (max-width: 600px) {
     .topnavbar {
-        padding: 0 10px; /* Reduce padding on smaller screens */
+        padding: 0 5px; /* Reduce padding on smaller screens */
     }
 
     .topnavbar-pages,
