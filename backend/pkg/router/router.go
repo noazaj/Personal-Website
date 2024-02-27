@@ -33,8 +33,5 @@ func NewRouter() *chi.Mux {
 
 	v1.Get("/readiness", api.HandlerReadiness)
 
-	fileServer := http.StripPrefix("/v1", http.FileServer(http.Dir(publicDir)))
-	router.Handle("/v1/*", fileServer)
-
 	return router
 }
