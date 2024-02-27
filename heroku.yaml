@@ -1,0 +1,10 @@
+build:
+  packs:
+    - https://github.com/heroku/heroku-buildpack-go
+
+  # You don't need to specify the `go` section unless you want to set
+  # up specific Go configurations. The buildpack should handle the Go app.
+
+run:
+  # This section defines the commands to run your web and other processes.
+  web: backend/bin/server
