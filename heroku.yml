@@ -1,7 +1,0 @@
-build:
-  languages:
-    go: true
-  scripts:
-    compile: cd backend && go build -o bin/app ./cmd/app
-run:
-  web: backend/bin/app
