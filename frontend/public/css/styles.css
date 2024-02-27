@@ -9,14 +9,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20%;
+    padding: 0 5vw;
 }
 
 .topnavbar-pages {
     display: flex;
     align-items: center;
     margin-left: auto;
-    padding-left: 30%;
+    padding-left: 5vw;
 }
 
 .topnavbar-socials {
@@ -59,7 +59,7 @@ body {
 /* Everything below here is used for mobile devices */
 @media screen and (max-width: 600px) {
     .topnavbar {
-        padding: 0 5px; /* Reduce padding on smaller screens */
+        padding: 0 2vw; /* Reduce padding on smaller screens */
     }
 
     .topnavbar-pages,
@@ -69,6 +69,6 @@ body {
     }
 
     .topnavbar a {
-        padding: 10px 8px; /* Adjust link padding */
+        padding: 1vw; /* Adjust link padding */
     }
 }
