@@ -1,1 +1,1 @@
-web: ./backend/bin/server
+web: backend/cmd/server/main.go
