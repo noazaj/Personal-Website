@@ -48,9 +48,12 @@ body {
     padding: 0;
 }
 
-.socials-link img,
+.socials-link img {
+    width: 50px
+}
+
 .logo-link img {
-    width: 50px;
+    width: 100px;
     display: block;
 }
 
