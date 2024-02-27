@@ -25,13 +25,13 @@ func NewRouter() *chi.Mux {
 
 	// Create the subrouter and mount it to the main router
 	v1 := chi.NewRouter()
+	router.Mount("/v1", v1)
 
 	// Define the routes and associate them
 	// with the handlers from the api package
-	v1.Get("/readiness", api.HandlerReadiness)
-	v1.Get("/", api.HandleIndexPage)
+	router.Get("/", api.HandleIndexPage)
 
-	router.Mount("/v1", v1)
+	v1.Get("/readiness", api.HandlerReadiness)
 
 	fileServer := http.StripPrefix("/v1", http.FileServer(http.Dir(publicDir)))
 	router.Handle("/v1/*", fileServer)
