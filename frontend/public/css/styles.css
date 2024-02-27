@@ -8,15 +8,15 @@ body {
     background-color: black;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 0 5vw;
-    flex-wrap: nowrap;
 }
 
 .topnavbar-pages {
     display: flex;
     align-items: center;
     padding-left: 5vw;
+    justify-content: space-evenly;
 }
 
 .topnavbar-socials {
