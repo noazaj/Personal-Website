@@ -7,7 +7,7 @@ import (
 	"os"
 
 	"github.com/joho/godotenv"
-	"github.com/noazaj/Personal-Website/pkg/router"
+	"github.com/noazaj/Personal-Website/backend/pkg/router"
 )
 
 func main() {
