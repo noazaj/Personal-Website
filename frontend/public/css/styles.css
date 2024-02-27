@@ -76,4 +76,9 @@ body {
     .topnavbar a:not(:first-child) {
         margin-left: 0.5vw; /* Reduce link margin */
     }
+
+    .socials-link,
+    .logo-link img {
+        max-width: 50%;
+    }
 }
