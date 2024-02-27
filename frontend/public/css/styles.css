@@ -79,6 +79,6 @@ body {
 
     .socials-link img,
     .logo-link img {
-        max-height: 50%;
+        max-width: 50%;
     }
 }
