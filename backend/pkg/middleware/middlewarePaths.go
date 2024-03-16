@@ -13,9 +13,9 @@ func MiddlewarePaths(next http.Handler) http.Handler {
 
 		if strings.HasPrefix(path, "/images") || strings.HasPrefix(path, "/css") {
 			if isDirectFileAccess(path) {
-				next.ServeHTTP(w, r)
-			} else {
 				util.RespondWithError(w, http.StatusForbidden, "Forbidden")
+			} else {
+				next.ServeHTTP(w, r)
 			}
 		} else {
 			next.ServeHTTP(w, r)
