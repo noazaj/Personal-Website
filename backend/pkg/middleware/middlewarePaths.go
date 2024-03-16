@@ -1,7 +1,6 @@
 package middleware
 
 import (
-	"log"
 	"net/http"
 	"strings"
 
@@ -11,9 +10,8 @@ import (
 func MiddlewarePaths(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		path := r.URL.Path
-		log.Printf("%s", path)
 
-		if strings.HasPrefix(path, "/images") || strings.HasPrefix(path, "/css") {
+		if strings.HasPrefix(path, "/images") {
 			util.RespondWithError(w, http.StatusForbidden, "Forbidden Directory")
 		} else {
 			next.ServeHTTP(w, r)
