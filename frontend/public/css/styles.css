@@ -9,14 +9,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20%;
+    padding: 0 5vw;
 }
 
 .topnavbar-pages {
     display: flex;
     align-items: center;
-    margin-left: auto;
-    padding-left: 30%;
+    padding-left: 5vw;
+    justify-content: space-evenly;
 }
 
 .topnavbar-socials {
@@ -27,7 +27,7 @@ body {
 
 .topnavbar a {
     color: white;
-    padding: 14px 16px;
+    padding: 1vw 1.5vw;
     text-decoration: none;
     font-size: 17px;
 }
@@ -48,10 +48,42 @@ body {
     padding: 0;
 }
 
+.socials-link img {
+    width: 50px
+}
+
 .logo-link img {
+    width: 75px;
     display: block;
 }
 
 .topnavbar a:not(:first-child) {
-    margin-left: 10px;
+    margin-left: 1vw;
+}
+
+/* Everything below here is used for mobile devices */
+@media screen and (max-width: 600px) {
+    .topnavbar {
+        padding: 0 2vw; /* Reduce padding on smaller screens */
+    }
+
+    .topnavbar-pages,
+    .topnavbar-socials {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .topnavbar a {
+        padding: 0.5vw; /* Adjust link padding */
+        font-size: 13px; /* Reduce font size */
+    }
+
+    .topnavbar a:not(:first-child) {
+        margin-left: 0.5vw; /* Reduce link margin */
+    }
+
+    .socials-link img,
+    .logo-link img {
+        max-width: 50%;
+    }
 }
