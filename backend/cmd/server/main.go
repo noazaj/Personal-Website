@@ -18,7 +18,7 @@ func main() {
 
 	// Create a server
 	srv := &http.Server{
-		Addr:    ":" + port,
+		Addr:    ":" + "8080",
 		Handler: router.NewRouter(),
 	}
 
