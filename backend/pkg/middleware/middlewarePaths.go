@@ -26,9 +26,12 @@ func MiddlewarePaths(next http.Handler) http.Handler {
 func isDirectFileAccess(path string) bool {
 	splitPath := strings.Split(path, "/")
 	final := splitPath[len(splitPath)-1]
-	if final[0] == '.' {
-		return true
-	} else {
-		return false
+	isFile := false
+	for _, char := range final {
+		if char == '.' {
+			isFile = true
+			break
+		}
 	}
+	return isFile
 }
