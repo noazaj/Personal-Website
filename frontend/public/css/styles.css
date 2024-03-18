@@ -17,6 +17,7 @@ body {
     align-items: center;
     padding-left: 5vw;
     justify-content: space-evenly;
+    border-radius: 25px;
 }
 
 .topnavbar-socials {

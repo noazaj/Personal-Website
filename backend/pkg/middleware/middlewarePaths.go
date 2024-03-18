@@ -24,7 +24,7 @@ func MiddlewarePaths(next http.Handler) http.Handler {
 }
 
 func isDirectFilePath(path string) bool {
-	if strings.HasSuffix(path, ".png") || strings.HasSuffix(path, ".css") {
+	if strings.HasSuffix(strings.ToLower(path), ".png") || strings.HasSuffix(strings.ToLower(path), ".css") {
 		return true
 	}
 	return false
