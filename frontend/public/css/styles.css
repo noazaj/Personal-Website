@@ -17,6 +17,9 @@ body {
     align-items: center;
     padding-left: 5vw;
     justify-content: space-evenly;
+}
+
+.topnavbar-pages a {
     border-radius: 25px;
 }
 
